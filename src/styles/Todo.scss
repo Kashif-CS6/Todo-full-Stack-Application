@@ -1,0 +1,126 @@
+@import "colors";
+.todo {
+  width: 18rem;
+  border: 1px solid $second;
+  border-radius: 24px;
+  height: 28rem;
+
+  > img {
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    height: 12rem;
+    background-color: $sixth;
+  }
+  > .title {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+  > .title-rejected {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-decoration: line-through;
+  }
+  > .description {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.7rem;
+    color: $dark;
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-align: justify;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: line-through;
+
+    line-height: 1rem;
+  }
+  > .simple {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.7rem;
+    color: $dark;
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-align: justify;
+    padding-left: 6px;
+    padding-right: 6px;
+    line-height: 1rem;
+  }
+  > .buttons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    > .editbutton {
+      border: none;
+      background-color: black;
+      color: $first;
+      padding: 8px 7px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    > .deletebutton {
+      border: none;
+      background-color: $fourth;
+      color: $first;
+      padding: 8px 7px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+.status-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  > .status {
+    font-size: 1rem;
+  }
+  > .buttons-status {
+    display: flex;
+    gap: 1rem;
+    > button {
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+}
+
+.Accepted {
+  font-family: $text3;
+  font-size: 0.8rem;
+  color: $third;
+  font-weight: 600;
+}
+.Rejected {
+  font-family: $text3;
+  font-size: 0.8rem;
+  color: $fourth;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .todo {
+    > img {
+    }
+    > .title {
+      font-size: 1rem;
+    }
+  }
+}

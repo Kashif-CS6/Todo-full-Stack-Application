@@ -1,0 +1,58 @@
+@import "colors";
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  > h1 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: $text3;
+    font-size: 2.5rem;
+  }
+  > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    > .label {
+      font-weight: 400;
+    }
+    > .input_todo {
+      flex: 1;
+      padding: 5px;
+    }
+  }
+  > .submit {
+    background-color: $third;
+    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: none;
+    border-radius: 3px;
+    color: $first;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bolder;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+
+    > h1 {
+      font-size: 1.4rem;
+    }
+    > div {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
